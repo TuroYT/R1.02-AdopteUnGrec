@@ -1,7 +1,6 @@
 // Autheur : Romain PINSOLLE
 // Fichier : index.js
 
-
 // Création de la carte
 map = new OpenLayers.Map("demoMap");
 map.addLayer(new OpenLayers.Layer.OSM());
