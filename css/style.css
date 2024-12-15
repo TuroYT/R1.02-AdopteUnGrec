@@ -1,9 +1,25 @@
+/*
+    Fichier: style.css
+*/
+
+/* Couleurs */
+.red {
+    color: #FF3F00;
+}
+
+.orange {
+    color: #FF7F11;
+}
+
+.white {
+    color: #FFFFFC;
+}
+
 body {
     margin: 0px;
 }
 
 h2 {
-    color: #FFF;
     font-family: 'Love Ya Like A Sister', cursive;
     font-size: 40px;
     font-style: normal;
@@ -14,7 +30,7 @@ h2 {
 
 #callToAction {
     background-image: url(../img/cta-bg.png);
-    height: 350px;
+    min-height: 350px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -27,7 +43,36 @@ h2 {
     background-size: cover;
 
     img {
-        width: 300px;
-        height: 300px;
+        max-width: 300px;
+        max-height: 300px;
+        width: 50%;
+    }
+}
+
+
+/* footer */
+footer {
+    background-color: #FF7F11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 20px;
+        width: 100%;
+
+        li>img {
+            width: 43px;
+            height: 43px;
+        }
     }
 }

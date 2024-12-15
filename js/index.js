@@ -13,7 +13,7 @@ var lonLat = new OpenLayers.LonLat(-1.5095, 43.4777)
     );
 
 // Définir le niveau de zoom
-var zoom = 15;
+var zoom = 12;
 
 // Centrer la carte sur les coordonnées spécifiées et définir le niveau de zoom
 map.setCenter(lonLat, zoom);
