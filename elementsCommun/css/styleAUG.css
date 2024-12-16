@@ -11,7 +11,8 @@ header {
 }
 
 h1 {
-    flex: 1;
+    position: absolute; /*je ne vois pas d'autre face de le centrer indépendamment*/
+    text-align: center;
     font-family: 'Love Ya Like A Sister', serif;
     color: #FFFFFF;
     font-size: 64px;
