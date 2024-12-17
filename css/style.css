@@ -15,6 +15,52 @@
     color: #FFFFFC;
 }
 
+#demoMap{
+    height: 800px; 
+    width: 70%;
+    min-width: 800px;
+    border-radius: 22px;
+    -moz-border-radius: 22px;
+    overflow: hidden;
+}
+
+.restauList{
+    margin-left: 40px;
+    background-color: #FF7F11;
+    border-radius: 22px;
+    padding: 20px;
+}
+
+.restauCard{
+    border-radius: 8px;
+    background: var(--Blanc, #FFFFFC);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    p {
+        margin: 0px;
+    }
+
+    h3 {
+        margin-top: 0px;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.container {
+    display: flex;
+}
+
 body {
     margin: 0px;
 }
@@ -26,6 +72,13 @@ h2 {
     font-weight: 400;
     line-height: normal;
 }
+
+
+/*
+
+    ? Sections
+
+*/
 
 
 #callToAction {

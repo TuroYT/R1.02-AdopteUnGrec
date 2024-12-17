@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AdopteUnGrec - Acceuil</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
-</head>
-<body>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Call to Action -->
     <section id="callToAction">
-        <h2 class="white">Adoptez Dès Maintenant Votre Tacos </h2>
-        <img src="img/logo.png" alt="logo adopte un grec">
+      <h2 class="white">Adoptez Dès Maintenant Votre Tacos</h2>
+      <img src="img/logo.png" alt="logo adopte un grec" />
     </section>
 
-    <!-- Map -->
-    <section id="choisirUnRestaurant">
-        <input type="text" placeholder="Choisir un restaurant">
-        <img src="img/magnifying-glass-solid.svg" alt="search icon">
+    <main>
+      <section id="choisirUnRestaurant">
+        <input type="text" placeholder="Choisir un restaurant" />
 
-        <aside class="restauList">
+        <img src="img/magnifying-glass-solid.svg" alt="search icon" />
+
+        <div class="container">
+
+            <!-- Map -->
+          <div id="demoMap"></div>
+          <aside class="restauList">
             <div class="restauCard">
-                <div class="info">
-                    <h3>AdopteUnGrec - Centre Commertial 2</h3>
-                    <br />
-                    <p>Ouverture :</p>
-                    <p>Lundi au samedi ( 11h - 23h30 )</p>
-                </div>
-                <a href="#">
-                    <img src="img/share-solid.svg" alt="choisir le restau">
-                </a>
+              <div class="infos">
+                <h3>AdopteUnGrec - Centre Commertial</h3>
+                <p>Ouverture :</p>
+                <p>Lundi au samedi ( 11h - 23h )</p>
+              </div>
+              <a href="#">
+                <img src="img/share-solid.svg" alt="choisir le restau" style="width: 50px;"/>
+              </a>
             </div>
-        </aside>
+          </aside>
+        </div>
+      </section>
 
-        <div id="demoMap" style="height:250px"></div>
-    </section>
+      <section id="nous">
+        <h2 class="red" style="text-align: center;">Qui Sommes Nous ?</h2>
+        <div class="container" style="align-items: center; flex-wrap: wrap;">
+            <p style="max-width: 60%;">
+                AdopteUnGrec est une entreprise de restauration rapide spécialisée
+                dans la vente de tacos. Nous vous proposons une large gamme de tacos,
+                de la viande hachée, du poulet, du poisson, des légumes, des frites,
+                de la sauce, du fromage, etc. Nous vous proposons également des
+                boissons et des desserts. Nous vous proposons également des menus pour
+                les enfants
+              </p>
+              <img
+                src="img/brunet-man-with-round-eyeglasses-removebg-preview 1.png"
+                alt="nous"
+              />
+        </div>
+        
+      </section>
 
-
-    <section id="nous">
-        <h2 class="red">Qui Sommes Nous ?</h2>
-        <p>AdopteUnGrec est une entreprise de restauration rapide spécialisée dans la vente de tacos. Nous vous proposons une large gamme de tacos, de la viande hachée, du poulet, du poisson, des légumes, des frites, de la sauce, du fromage, etc. Nous vous proposons également des boissons et des desserts. Nous vous proposons également des menus pour les enfants</p>
-        <img src="img/brunet-man-with-round-eyeglasses-removebg-preview 1.png" alt="nous">
-    </section>
-
-    <section id="devenirFranchise">
+      <section id="devenirFranchise">
         <h2 class="red">Nous Rejoindre</h2>
         <button>Devenir Franchisé</button>
-    </section>
+      </section>
+    </main>
 
-   <footer>
-    <ul>
-        <li><img src="img/facebook.svg" alt="facebook"></li>
-        <li><img src="img/insta.svg" alt="instagram"></li>
-        <li><img src="img/twitter.svg" alt="X - twitter"></li>
-    </ul>
-    <p class="white">© 2024 AdopteUnGrec. Tous droits réservés.</p>
-   </footer>
+    <footer>
+      <ul>
+        <li><img src="img/facebook.svg" alt="facebook" /></li>
+        <li><img src="img/insta.svg" alt="instagram" /></li>
+        <li><img src="img/twitter.svg" alt="X - twitter" /></li>
+      </ul>
+      <p class="white">© 2024 AdopteUnGrec. Tous droits réservés.</p>
+    </footer>
 
     <!-- Javascript -->
     <script src="js/OpenLayers-2.13.1/OpenLayers.js"></script>
     <script src="js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"></script>
-
-    
-</body>
+  </body>
 </html>
