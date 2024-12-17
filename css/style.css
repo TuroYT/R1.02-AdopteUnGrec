@@ -18,6 +18,9 @@
 }
 
 
+/**
+ * Choisir un restaurant
+ */
 
 #demoMap{
     height: 800px; 
@@ -29,9 +32,7 @@
 }
 
 
-/**
- * Aside
- */
+/* Aside */
 
 
 .restauList{
@@ -90,6 +91,33 @@ h2 {
 
 */
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-wrap: wrap;
+    background-color: #FF7F11;
+
+    img {
+        width: 100px;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: 'Love Ya Like A Sister', serif;
+        color: #FFFFFF;
+        font-size: 64px;
+        text-shadow: 1px 1px 2px black;
+        margin: 0;
+        font-weight: normal;
+        transform: translate(12%, 0);
+    }
+
+
+}
+
 
 #callToAction {
     background-image: url(../img/cta-bg.png);
@@ -112,6 +140,10 @@ h2 {
     }
 }
 
+
+#chosirUnRestaurant {
+
+}
 
 /* footer */
 footer {
@@ -141,27 +173,7 @@ footer {
     }
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 95px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #FF7F11;
-}
 
-h1 {
-    position: absolute; /*je ne vois pas d'autre face de le centrer indépendamment*/
-    text-align: center;
-    font-family: 'Love Ya Like A Sister', serif;
-    color: #FFFFFF;
-    font-size: 64px;
-    text-shadow: 1px 1px 2px black;
-    margin: 0;
-    font-weight: normal;
-}
 
 .btn {
     border-radius: 22px;
@@ -187,13 +199,6 @@ h1 {
     color: #FF3F00;
     border-color: #FF3F00;
     background-color: #FFFFFC;
-}
-
-
-.logo{
-    margin-left: 1em;
-    margin-right: auto;
-    height: 90%;
 }
 
 
