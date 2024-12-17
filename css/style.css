@@ -129,3 +129,48 @@ footer {
         }
     }
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 95px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FF7F11;
+}
+
+h1 {
+    position: absolute; /*je ne vois pas d'autre face de le centrer indépendamment*/
+    text-align: center;
+    font-family: 'Love Ya Like A Sister', serif;
+    color: #FFFFFF;
+    font-size: 64px;
+    text-shadow: 1px 1px 2px black;
+    margin: 0;
+    font-weight: normal;
+}
+
+.boutonTrouverRestau {
+    margin-right: 1em;
+    margin-left: auto;
+    border-radius: 20px;
+    color: white;
+    border: 6px solid;
+    text-decoration: none;
+}
+
+.texteTrouverRestau{
+    font-family: 'ADLaM Display', serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: white;
+    padding: 0 8px;
+}
+
+.logo{
+    margin-left: 1em;
+    margin-right: auto;
+    height: 90%;
+}
