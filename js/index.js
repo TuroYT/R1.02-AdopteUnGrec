@@ -44,3 +44,5 @@ var lonLat3 = new OpenLayers.LonLat(-1.5195, 43.4945) // Coordinates 43°29'40.1
 
 var marker3 = new OpenLayers.Marker(lonLat3);
 markers.addMarker(marker3);
+
+
