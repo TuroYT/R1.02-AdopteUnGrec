@@ -1,6 +1,8 @@
 .rectangle {
-    background-color: #FF3F00;
-    
-
-
+    background-color: #ff3f00;
+    text-align: center;
+    width: 1229px;
+    height: 141px;
+    padding: 20px;
+    border-radius: 22px;
 }
