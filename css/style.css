@@ -1,5 +1,8 @@
 /*
     Fichier: style.css
+
+    Elements communs et index
+    
 */
 
 main {
@@ -102,7 +105,7 @@ header {
     border: none;
     align-self: center;
   };
-  
+
   input:focus {
     outline: none;
     border: none;
@@ -123,6 +126,11 @@ header {
   align-items: center;
   padding: 20px;
   margin-bottom: 20px;
+
+
+  .infos {
+    width: 90%;
+  }
 
   p {
     margin: 0px;
