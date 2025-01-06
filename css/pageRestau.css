@@ -21,6 +21,7 @@
     display: flex;
     margin-top: 10px;
     width: 80%;
+    height: 50px;
     justify-content: space-between;
 }
 
@@ -49,13 +50,15 @@
 
 #recherche{
     display: flex;
-    justify-content: center;
+    width: 50%;
+    justify-content: space-between;
     border: 2px solid #FF7F11;
     border-radius: 15px;
 }
 
 .barre-recherche{
     color: #FF7F11;
+    width: 100%;
     border: none;
     outline: none;
     border-radius: 15px;
@@ -68,11 +71,14 @@
 .bouton-recherche{
     border: none;
     background-color: transparent;
+    outline: none;
 }
 
 .btn-panier {
+    display: flex;
+    width: 25;
+    justify-content: center;
     border-radius: 22px;
-    
     border: 5px solid #FF7F11;
     text-decoration: none;
     font-weight: normal;
@@ -80,6 +86,12 @@
     color: #FF7F11;
     padding: 15px;
     background-color: #FF7F11;
+}
+
+.panier{
+     height: 35px;
+     width: 35px;
+     align-self: center;
 }
 
 .btnPanier:hover {
