@@ -36,17 +36,20 @@
 }
 
 .nom-restau{
-    font-family: "ADLaM Display", serif;
+    font-family: "ADLaM Display", system-ui;
     color:white;
     font-size: 24px;
     text-align: center;
+    margin: 0;
 }
 
 .adresse-restau{
-    font-family: "ADLaM Display", serif;
+    margin-top: 0;
+    font-family: "ADLaM Display", system-ui;
     color:white;
     font-size: 16px;
     text-align: center;
+    margin-bottom: 0.1em;
 }
 
 #recherche{
@@ -114,6 +117,7 @@
 }
 
 .produits-phares-texte{
+    font-family: "ADLaM Display", system-ui;
     padding-left: 10%;
     font-size: 28px;
 }
@@ -136,4 +140,9 @@
     border-radius: 10px;
     height: 247px;
     width: 243px;
+}
+
+h3{
+    font-family: "ADLaM Display", system-ui;
+    margin-top: 0.5em;
 }
