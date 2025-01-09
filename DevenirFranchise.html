@@ -27,42 +27,49 @@
     </section>
     <section>
       <form action="" method="get" class="formulaireInfo">
-        <div class="formulaireInfo">
-          <label for="Nom">Nom</label>
-          <input type="text" name="nom" id="nom" required>
-        </div>
-        <div class="formulaireInfo">
-          <label for="prenom">Prenom</label>
-          <input type="text" name="prenom" id="prenom" required>
-        </div>
-        <div class="formulaireInfo">
-          <label for="genre">Genre</label>
-          <input type="text" name="genre" id="genre" required>
-        </div>
-        <div class="formulaireInfo">
-          <label for="numero">Numero de téléphone</label>
-          <input type="text" name="numero" id="numero" required>
-        </div>
-        <div class="formulaireInfo">
-          <label for="mail">Adresse mail</label>
-          <input type="text" name="mail" id="mail" required>
-        </div>
-        <div class="formulaireInfo">
-          <label for="mdp">Mot de passe</label>
-          <input type="text" name="mdp" id="mdp" required>
-        </div>
-        <div class="formulaireInfo">
-          <label for="situation">Situation professionelle</label>
-          <input type="text" name="situation" id="situation" required>
-        </div>
-        <div class="formulaireInfo">
-          <label for="capital">Capital avant création de Franchise</label>
-          <input type="text" name="capital" id="capital" required>
-        </div>
-        <div class="formulaireInfo">
-          <input type="submit" value="Soumetre Informations">
-        </div>
-      </form>
+  <!-- Colonne de gauche -->
+  <div class="column-left">
+    <div>
+      <label for="Nom">Nom</label>
+      <input type="text" name="nom" id="nom" required>
+    </div>
+    <div>
+      <label for="prenom">Prénom</label>
+      <input type="text" name="prenom" id="prenom" required>
+    </div>
+    <div>
+      <label for="genre">Genre</label>
+      <input type="text" name="genre" id="genre" required>
+    </div>
+    <div>
+      <label for="numero">Numéro de téléphone</label>
+      <input type="text" name="numero" id="numero" required>
+    </div>
+  </div>
+
+  <!-- Colonne de droite -->
+  <div class="column-right">
+    <div>
+      <label for="mail">Adresse mail</label>
+      <input type="email" name="mail" id="mail" required>
+    </div>
+    <div>
+      <label for="mdp">Mot de passe</label>
+      <input type="password" name="mdp" id="mdp" required>
+    </div>
+    <div>
+      <label for="situation">Situation professionnelle</label>
+      <input type="text" name="situation" id="situation" required>
+    </div>
+    <div>
+      <label for="capital">Capital avant création de Franchise</label>
+      <input type="text" name="capital" id="capital" required>
+    </div>
+  </div>
+
+  <!-- Bouton de soumission -->
+  <input type="submit" value="Soumettre Informations">
+</form>
     </section>
   </main>
 
