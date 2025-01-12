@@ -1,3 +1,10 @@
+body{
+    background-image: url("../img/background.png");
+    background-size: auto auto;
+    background-position: center;
+}
+
+
 #banniere{
     display: flex;
     justify-content: center;
@@ -140,16 +147,36 @@
 
 
 .produit{
+    position: relative;
     display: grid;
     place-items: center;
     border: 3px solid #FF7F11;
     border-radius: 10px;
-    height: 15.438rem;
-    width: 15.188rem;
+    height: 247px;
+    width: 243px;
     box-shadow: 0px 5px 10px rgb(99, 99, 99);
+    margin-bottom: 0.5em;
+}
+
+.image-tacos{
+    width: 243px;
+}
+
+.btn-tacos{
+    display: grid;
+    align-items: center;
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border-width: 0;
+    background-color: #FF7F11;
 }
 
 h3{
     font-family: "ADLaM Display", system-ui;
-    margin-top: 0.5em;
+    margin: 0;
 }
+
