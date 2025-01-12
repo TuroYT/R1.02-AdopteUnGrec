@@ -129,17 +129,24 @@
 }
 
 #groupe-produits{
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    gap: 5px;
+    overflow: auto;
+    white-space: nowrap;
+    margin-top: 20px;
     width: 80%;  
 }
 
+
 .produit{
+    display: grid;
+    place-items: center;
     border: 3px solid #FF7F11;
     border-radius: 10px;
-    height: 247px;
-    width: 243px;
+    height: 15.438rem;
+    width: 15.188rem;
+    box-shadow: 0px 5px 10px rgb(99, 99, 99);
 }
 
 h3{
