@@ -27,44 +27,34 @@
     </section>
     <section>
       <form action="" method="get" class="formulaireInfo">
-  <!-- Colonne de gauche -->
-  <div class="column-left">
-    <div>
-      <label for="Nom">Nom</label>
-      <input type="text" name="nom" id="nom" required>
-    </div>
-    <div>
-      <label for="prenom">Prénom</label>
-      <input type="text" name="prenom" id="prenom" required>
-    </div>
-    <div>
-      <label for="genre">Genre</label>
-      <input type="text" name="genre" id="genre" required>
-    </div>
-    <div>
-      <label for="numero">Numéro de téléphone</label>
-      <input type="text" name="numero" id="numero" required>
-    </div>
+      <!-- Première colonne -->
+  <div class="column">
+    <label for="nom">Nom</label>
+    <input id="nom" type="text" />
+    
+    <label for="prenom">Prénom</label>
+    <input id="prenom" type="text" />
+    
+    <label for="mail">Adresse Mail</label>
+    <input id="email" type="email" />
+    
+    <label for="mdp">Mot de Passe</label>
+    <input id="password" type="password" />
+    
   </div>
-
-  <!-- Colonne de droite -->
-  <div class="column-right">
-    <div>
-      <label for="mail">Adresse mail</label>
-      <input type="email" name="mail" id="mail" required>
-    </div>
-    <div>
-      <label for="mdp">Mot de passe</label>
-      <input type="password" name="mdp" id="mdp" required>
-    </div>
-    <div>
-      <label for="situation">Situation professionnelle</label>
-      <input type="text" name="situation" id="situation" required>
-    </div>
-    <div>
-      <label for="capital">Capital avant création de Franchise</label>
-      <input type="text" name="capital" id="capital" required>
-    </div>
+     <!-- Deuxième colonne -->
+  <div class="column">
+    <label for="Genre">Genre</label>
+    <input id="text" type="text" />
+    
+    <label for="numero">Numéro de téléphone</label>
+    <input id="telephone" type="text" />
+   
+    <label for="situation">Situation professionnelle</label>
+    <input id="situation" type="text" />
+    
+    <label for="capital">Capital avant création de Franchise</label>
+    <input id="capital" type="text" />
   </div>
 
   <!-- Bouton de soumission -->

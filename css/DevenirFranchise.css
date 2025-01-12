@@ -16,18 +16,9 @@ form.formulaireInfo{
     display: flex;
     flex-direction: column; /* Positionne les labels au-dessus des inputs */
     margin-bottom: 44px; /* Espacement entre les champs */
-}
+.column{
+    column-count: 2;
 
-.column-left{
-    display:flex;
-    flex-direction: column;
-}
-
-.column-rignt{
-    margin-top: 30px;
-    margin-left: 386px;
-    display:flex;
-    flex-direction: column;
 }
 
 input{
@@ -48,10 +39,10 @@ label{
     font-family: "ADLaM Display";
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
     margin-bottom: 5px; /* Espacement entre le label et l'input */
     font-size: 16px; /* Taille légèrement réduite pour plus de lisibilité */
+    justify-content: center;
 }
 
 input[type="submit"]{
