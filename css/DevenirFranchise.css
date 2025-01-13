@@ -6,3 +6,75 @@
     padding: 20px;
     border-radius: 22px;
 }
+
+form.formulaireInfo{
+    width: 1112px;
+    height: 537px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: var(--Orange, #FF7F11);
+    display: flex;
+    flex-direction: column; /* Positionne les labels au-dessus des inputs */
+    margin-bottom: 44px; /* Espacement entre les champs */
+}
+
+.column-left{
+    display:flex;
+    flex-direction: column;
+}
+
+.column-rignt{
+    margin-top: 30px;
+    margin-left: 386px;
+    display:flex;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 22px;
+    border: 3px solid var(--Rouge, #FF3F00);
+    background: #FFFFFC; 
+    padding: 10px; /* Espacement interne pour rendre les inputs plus confortables */
+    font-size: 16px; /* Taille du texte dans les inputs */   
+}
+
+label{
+    display: block;
+    width:29px;
+    float:bottom;
+    white-space: nowrap;
+    color: var(--Blanc, #FFFFFC);
+    text-align: center;
+    font-family: "ADLaM Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px; /* Espacement entre le label et l'input */
+    font-size: 16px; /* Taille légèrement réduite pour plus de lisibilité */
+}
+
+input[type="submit"]{
+    background: #FF7F11;
+    width: 223px;
+    height: 57px;
+    flex-shrink: 0;
+    border-radius: 22px;
+    border: 5px solid var(--Blanc, #FFFFFC);
+    text-align: center;
+    color:white;
+    font-family: "ADLaM Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top:  100px;
+    margin-left: 816px;
+}
+
+div{
+    margin-top: 21px;
+    margin-left: 30px;
+}
+
+
+

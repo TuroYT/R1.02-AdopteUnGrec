@@ -1,3 +1,10 @@
+body{
+    background-image: url("../img/background.png");
+    background-size: auto auto;
+    background-position: center;
+}
+
+
 #banniere{
     display: flex;
     justify-content: center;
@@ -36,20 +43,24 @@
 }
 
 .nom-restau{
-    font-family: "ADLaM Display", serif;
+    font-family: "ADLaM Display", system-ui;
     color:white;
     font-size: 24px;
     text-align: center;
+    margin: 0;
 }
 
 .adresse-restau{
-    font-family: "ADLaM Display", serif;
+    margin-top: 0;
+    font-family: "ADLaM Display", system-ui;
     color:white;
     font-size: 16px;
     text-align: center;
+    margin-bottom: 0.1em;
 }
 
 #recherche{
+    position: relative;
     display: flex;
     width: 50%;
     justify-content: space-between;
@@ -73,14 +84,18 @@
 }
 
 .btn-recherche{
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    bottom: 0.1em;
     border: none;
     background-color: transparent;
     outline: none;
 }
 
 .magnifying-glass{
-    height: 3vh;
-    width: 3vh;
+    height: 30px;
+    width: 30px;
 }
 
 .btn-panier {
@@ -108,18 +123,65 @@
     border-color: #FF3F00;
 }
 
-#container-PF{
+#produits-phares{
     display: flex;
-    justify-content: center;
     margin-top: 40px;
 }
 
-#produits-phares{
-    display: flex;
-    width: 80%;
+.produits-phares-texte{
+    font-family: "ADLaM Display", system-ui;
+    padding-left: 10%;
+    font-size: 28px;
 }
 
-.produits-phares-texte{
-    font-size: 28px;
+#centrer-produits{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#groupe-produits{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    overflow: auto;
+    white-space: nowrap;
+    margin-top: 20px;
+    width: 80%;  
+}
+
+
+.produit{
+    position: relative;
+    display: grid;
+    place-items: center;
+    border: 3px solid #FF7F11;
+    border-radius: 10px;
+    height: 247px;
+    width: 243px;
+    box-shadow: 0px 5px 10px rgb(99, 99, 99);
+    margin-bottom: 0.5em;
+}
+
+.image-tacos{
+    width: 243px;
+}
+
+.btn-tacos{
+    display: grid;
+    align-items: center;
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border-width: 0;
+    background-color: #FF7F11;
+}
+
+h3{
+    font-family: "ADLaM Display", system-ui;
+    margin: 0;
 }
 
