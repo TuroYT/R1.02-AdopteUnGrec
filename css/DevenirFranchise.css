@@ -14,13 +14,13 @@ form.formulaireInfo{
     border: 1px solid #000;
     background: var(--Orange, #FF7F11);
     display: flex;
-    flex-direction: column; /* Positionne les labels au-dessus des inputs */
     margin-bottom: 44px; /* Espacement entre les champs */
 }
 
 .column-left{
     display:flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .column-rignt{
@@ -28,6 +28,7 @@ form.formulaireInfo{
     margin-left: 386px;
     display:flex;
     flex-direction: column;
+    width: 50%;
 }
 
 input{

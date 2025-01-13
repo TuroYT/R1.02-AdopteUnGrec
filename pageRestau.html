@@ -1,98 +1,138 @@
 <!DOCTYPE html>
-<html lang="fr"> <!--Langue utilisee-->
+<html lang="fr">
+  <!--Langue utilisee-->
 
-<head>
+  <head>
     <meta charset="utf-8" />
-    <title>Page du Restaurant</title> <!--titre de l'onglet-->
-    <link rel="stylesheet" href="css/style.css"> <!--fichier css de style-->
-    <link rel="stylesheet" href="css/pageRestau.css">
+    <title>Page du Restaurant</title>
+    <!--titre de l'onglet-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--fichier css de style-->
+    <link rel="stylesheet" href="css/pageRestau.css" />
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap"
+      rel="stylesheet" />
+  </head>
 
-<body>
-    
+  <body>
     <header>
-        <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo Adopte un Grec"/></a>
-        <h1>Adopte un Grec</h1>
-        <a class="btn" href="#chercherRestau">Trouver un restaurant</a>
+      <a href="index.html"
+        ><img class="logo" src="img/logo.png" alt="Logo Adopte un Grec"
+      /></a>
+      <h1>Adopte un Grec</h1>
+      <a class="btn" href="#chercherRestau">Trouver un restaurant</a>
     </header>
     <section id="banniere">
-        <img class="banniere" src="img/banniere.jpg" alt="Adopte un grec ">
+      <img class="banniere" src="img/banniere.jpg" alt="Adopte un grec " />
     </section>
     <div id="container-NAV">
-        <nav id="nav-container">
-            <div id="coordonnee-restau">
-                <strong class="nom-restau">Adopte un Grec</strong>
-                <h5 class="adresse-restau">5 rue tacos, TacosVille</h5>
-            </div>
-            <div id="recherche">
-                <input type="text" class="barre-recherche" placeholder="Rechercher des produits">
-                <button class="btn-recherche"> <img src="img/magnifying_glass.svg" height="40" width="40" class="magnifying-glass"/></button>
-            </div>
-            <a class="btn-panier" href="panier"><img src="img/panier 1.png" alt="panier" class="panier"/></a>
-        </nav>
-    </div>   
-    <section >
-        <div id="produits-phares">
-            <strong class="produits-phares-texte">Produits phares</strong>
+      <nav id="nav-container">
+        <div id="coordonnee-restau">
+          <strong class="nom-restau">Adopte un Grec</strong>
+          <h5 class="adresse-restau">5 rue tacos, TacosVille</h5>
         </div>
-        <div id="centrer-produits">
-            <div id="groupe-produits">
-                <div id="container-produit">
-                    <div class="produit">
-                        <img src="img/mega-tacos.png" alt="mega tacos" class="image-tacos">
-                        <button class="btn-tacos"><img src="img/plus-solid.svg" alt="+"></button>
-                    </div>
-                    <h3>GIGATACOS</h3>
-                    <h3>19.95€</h3>
-                </div>
-                <div id="container-produit">
-                    <div class="produit">
-                        <img src="img/tacos-triple.png" alt="tacos triple" class="image-tacos">
-                        <button class="btn-tacos"><img src="img/plus-solid.svg" alt="+"></button>
-                    </div>
-                    <h3>TACOS TRIPLE</h3>
-                    <h3>12.95€</h3>
-                </div>
-                <div id="container-produit">
-                    <div class="produit">
-                        <img src="img/tacos-double.png" alt="tacos double" class="image-tacos">
-                        <button class="btn-tacos"><img src="img/plus-solid.svg" alt="+"></button>
-                    </div>
-                    <h3>TACOS DOUBLE</h3>
-                    <h3>9.99€</h3>
-                </div>
-                <div id="container-produit">
-                    <div class="produit">
-                        <img src="img/tacos-simple.png" alt="tacos simple" class="image-tacos">
-                        <button class="btn-tacos"><img src="img/plus-solid.svg" alt="+"></button>
-                    </div>
-                    <h3>TACOS SIMPLE</h3>
-                    <h3>6.95€</h3>
-                </div>
-                <div id="container-produit">
-                    <div class="produit">
-                        <img src="img/tacos-enfant.png" alt="tacos enfant" class="image-tacos">
-                        <button class="btn-tacos"><img src="img/plus-solid.svg" alt="+"></button>
-                    </div>
-                    <h3>TACOS ENFANT</h3>
-                    <h3>4.95€</h3>
-                </div>
-            </div>
+        <div id="recherche">
+          <input
+            type="text"
+            class="barre-recherche"
+            placeholder="Rechercher des produits" />
+          <button class="btn-recherche">
+            <img
+              src="img/magnifying_glass.svg"
+              height="40"
+              width="40"
+              class="magnifying-glass" />
+          </button>
         </div>
+        <a class="btn-panier" href="panier"
+          ><img src="img/panier 1.png" alt="panier" class="panier"
+        /></a>
+      </nav>
+    </div>
+    <section>
+      <div id="produits-phares">
+        <strong class="produits-phares-texte">Produits phares</strong>
+      </div>
+      <div id="centrer-produits">
+        <div id="groupe-produits">
+          <div id="container-produit">
+            <div class="produit">
+              <img
+                src="img/mega-tacos.png"
+                alt="mega tacos"
+                class="image-tacos" />
+              <button class="btn-tacos">
+                <img src="img/plus-solid.svg" alt="+" />
+              </button>
+            </div>
+            <h3>GIGATACOS</h3>
+            <h3>19.95€</h3>
+          </div>
+          <div id="container-produit">
+            <div class="produit">
+              <img
+                src="img/tacos-triple.png"
+                alt="tacos triple"
+                class="image-tacos" />
+              <button class="btn-tacos">
+                <img src="img/plus-solid.svg" alt="+" />
+              </button>
+            </div>
+            <h3>TACOS TRIPLE</h3>
+            <h3>12.95€</h3>
+          </div>
+          <div id="container-produit">
+            <div class="produit">
+              <img
+                src="img/tacos-double.png"
+                alt="tacos double"
+                class="image-tacos" />
+              <button class="btn-tacos">
+                <img src="img/plus-solid.svg" alt="+" />
+              </button>
+            </div>
+            <h3>TACOS DOUBLE</h3>
+            <h3>9.99€</h3>
+          </div>
+          <div id="container-produit">
+            <div class="produit">
+              <img
+                src="img/tacos-simple.png"
+                alt="tacos simple"
+                class="image-tacos" />
+              <button class="btn-tacos">
+                <img src="img/plus-solid.svg" alt="+" />
+              </button>
+            </div>
+            <h3>TACOS SIMPLE</h3>
+            <h3>6.95€</h3>
+          </div>
+          <div id="container-produit">
+            <div class="produit">
+              <img
+                src="img/tacos-enfant.png"
+                alt="tacos enfant"
+                class="image-tacos" />
+              <button class="btn-tacos">
+                <img src="img/plus-solid.svg" alt="+" />
+              </button>
+            </div>
+            <h3>TACOS ENFANT</h3>
+            <h3>4.95€</h3>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
-        <ul>
-            <li><img src="img/facebook.svg" alt="facebook" /></li>
-            <li><img src="img/insta.svg" alt="instagram" /></li>
-            <li><img src="img/twitter.svg" alt="X - twitter" /></li>
-          </ul>
-          <p class="white">© 2024 AdopteUnGrec. Tous droits réservés.</p>
+      <ul>
+        <li><img src="img/facebook.svg" alt="facebook" /></li>
+        <li><img src="img/insta.svg" alt="instagram" /></li>
+        <li><img src="img/twitter.svg" alt="X - twitter" /></li>
+      </ul>
+      <p class="white">© 2024 AdopteUnGrec. Tous droits réservés.</p>
     </footer>
-</body>
-
-
+  </body>
 </html>
