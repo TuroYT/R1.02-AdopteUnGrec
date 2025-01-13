@@ -14,6 +14,7 @@ form.formulaireInfo{
     border: 1px solid #000;
     background: var(--Orange, #FF7F11);
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 44px; /* Espacement entre les champs */
 }
 
@@ -68,8 +69,7 @@ input[type="submit"]{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    margin-top:  100px;
-    margin-left: 816px;
+
 }
 
 div{
