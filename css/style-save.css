@@ -1,0 +1,276 @@
+/*
+    Fichier: style.css
+
+    Elements communs et index
+    
+*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  
+}
+
+body {
+  margin: 0px;
+}
+
+h2 {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-shadow:  0px 4px 8px rgba(0, 0, 0, 0.25); 
+}
+
+
+
+/* 
+    ? Elements communs
+*/
+
+/* 
+    * Footer
+*/
+
+footer {
+  background-color: #ff7f11;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 100px;
+}
+
+footer>ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+footer>ul>li > img {
+    width: 43px;
+    height: 43px;
+  }
+
+
+/* 
+    * Header 
+*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  flex-wrap: wrap;
+  background-color: #ff7f11;
+}
+
+header>img {
+  width: 100px;
+}
+
+header>h1 {
+  text-align: center;
+  font-family: "Love Ya Like A Sister", serif;
+  color: #ffffff;
+  font-size: 64px;
+  text-shadow: 1px 1px 2px black;
+  margin: 0;
+  font-weight: normal;
+  transform: translate(12%, 0);
+}
+
+
+/*
+
+    ? Sections de la Index dans l'ordre
+
+*/
+
+
+/* 
+    * Call to action
+*/
+
+#callToAction {
+  background-image: url(../img/cta-bg.png);
+  min-height: 350px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+ 
+}
+
+#callToAction>img {
+  max-width: 300px;
+  max-height: 300px;
+  width: 50%;
+}
+
+
+
+/* 
+    * Choisir un restaurant
+*/
+
+#demoMap {
+  height: 800px;
+  width: 70%;
+  min-width: 800px;
+  border-radius: 22px;
+  -moz-border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+#chosirUnRestaurant {
+  margin-bottom: 20px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 30px;
+  border-radius: 22px;
+  padding: 10px;
+  border: 5px solid #ff7f11;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  
+
+}
+
+#choisirUnRestaurant>input {
+  width: 80%;
+  height: 80%;
+  border: none;
+  align-self: center;
+}
+
+#choisirUnRestaurant>input:focus {
+  outline: none;
+  border: none;
+}
+
+
+
+
+.restauList {
+  margin-left: 40px;
+  background-color: #ff7f11;
+  border-radius: 22px;
+  padding: 20px;
+}
+
+.restauCard {
+  border-radius: 8px;
+  background: var(--Blanc, #fffffc);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  
+}
+
+.restauCard>.infos {
+  width: 90%;
+}
+
+.restauCard>p {
+  margin: 0px;
+}
+
+.restauCard>h3 {
+  margin-top: 0px;
+}
+
+/* 
+    * Qui sommes-nous ?
+*/
+
+#nous {
+  background-image: url("../img/background.png");
+  background-size: auto auto;
+  border-radius: 22px;
+  background-position: center;
+  margin-top: 50px;
+  padding-left: 20px;
+}
+
+
+
+/**
+ * Utils
+ */
+
+.container {
+  display: flex;
+}
+
+.btn {
+  border-radius: 22px;
+
+  border: 5px solid var(--Blanc, #fffffc);
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1rem;
+  color: white;
+  padding: 15px;
+}
+
+.btn:hover {
+  background-color: #ff3f00;
+}
+
+.btn-orange {
+  border: 5px solid var(--Blanc, #ff7f11);
+  color: #ff7f11;
+}
+
+.btn-orange:hover {
+  color: #ff3f00;
+  border-color: #ff3f00;
+  background-color: #fffffc;
+}
+
+.adlam-display-regular,
+a,
+p {
+  font-family: "ADLaM Display", system-ui;
+}
+
+/**
+ *Couleurs 
+ */
+.red {
+  color: #ff3f00;
+}
+
+.orange {
+  color: #ff7f11;
+}
+
+.white {
+  color: #fffffc;
+}
