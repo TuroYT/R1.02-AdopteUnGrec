@@ -15,7 +15,8 @@ form.formulaireInfo{
     background: var(--Orange, #FF7F11);
     display: flex;
     margin-bottom: 44px; /* Espacement entre les champs */
-}
+.column{
+    column-count: 2;
 
 .column-left{
     display:flex;
@@ -49,10 +50,10 @@ label{
     font-family: "ADLaM Display";
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
     margin-bottom: 5px; /* Espacement entre le label et l'input */
     font-size: 16px; /* Taille légèrement réduite pour plus de lisibilité */
+    justify-content: center;
 }
 
 input[type="submit"]{
