@@ -32,6 +32,8 @@ h2 {
 
 */
 
+/* header */
+
 header {
   display: flex;
   align-items: center;
@@ -40,22 +42,35 @@ header {
   padding-right: 10%;
   flex-wrap: wrap;
   background-color: #ff7f11;
+}
 
-  img {
+header>img {
     width: 100px;
   }
 
-  h1 {
-    text-align: center;
-    font-family: "Love Ya Like A Sister", serif;
-    color: #ffffff;
-    font-size: 64px;
-    text-shadow: 1px 1px 2px black;
-    margin: 0;
-    font-weight: normal;
-    transform: translate(12%, 0);
-  }
+
+header>h1 {
+  text-align: center;
+  font-family: "Love Ya Like A Sister", serif;
+  color: #ffffff;
+  font-size: 64px;
+  text-shadow: 1px 1px 2px black;
+  margin: 0;
+  font-weight: normal;
+  transform: translate(12%, 0);
 }
+
+
+/*
+
+    ? Sections de la Index dans l'ordre
+
+*/
+
+
+/* 
+    ? Call to action
+*/
 
 #callToAction {
   background-image: url(../img/cta-bg.png);
@@ -71,12 +86,20 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 
-  img {
-    max-width: 300px;
-    max-height: 300px;
-    width: 50%;
-  }
+ 
 }
+
+#callToAction>img {
+  max-width: 300px;
+  max-height: 300px;
+  width: 50%;
+}
+
+
+
+/* 
+    ? Choisir un restaurant
+*/
 
 #demoMap {
   height: 800px;
@@ -136,10 +159,28 @@ header {
     margin: 0px;
   }
 
-  h3 {
-    margin-top: 0px;
-  }
+.restauCard>h3 {
+  margin-top: 0px;
 }
+}
+
+/* 
+    ? Qui sommes-nous ?
+*/
+
+#nous {
+  background-image: url("../img/background.png");
+  background-size: auto auto;
+  border-radius: 22px;
+  background-position: center;
+  margin-top: 50px;
+  padding-left: 20px;
+}
+
+
+/* 
+    ? Footer
+*/
 
 footer {
   background-color: #ff7f11;
@@ -151,24 +192,22 @@ footer {
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 100px;
-
-  ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 20px;
-    width: 100%;
-
-    li > img {
-      width: 43px;
-      height: 43px;
-    }
-  }
 }
 
+footer>ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 20px;
+  width: 100%;
+}
 
+footer>ul>li > img {
+    width: 43px;
+    height: 43px;
+  }
 
 /**
  * Utils
