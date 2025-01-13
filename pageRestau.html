@@ -4,8 +4,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <title>Page du Restaurant</title>
     <!--titre de l'onglet-->
+    <title>Page du Restaurant</title>
+    <!--fichier css de style-->
     <link rel="stylesheet" href="css/style.css" />
     <!--fichier css de style-->
     <link rel="stylesheet" href="css/pageRestau.css" />
@@ -18,6 +19,7 @@
   </head>
 
   <body>
+    <!--header-->
     <header>
       <a href="index.html"
         ><img class="logo" src="img/logo.png" alt="Logo Adopte un Grec"
@@ -25,33 +27,32 @@
       <h1>Adopte un Grec</h1>
       <a class="btn" href="index.html#chercherRestau">Trouver un restaurant</a>
     </header>
+    <!--banniere-->
     <section id="banniere">
-      <img class="banniere" src="img/banniere.jpg" alt="Adopte un grec " />
+      <img class="banniere" src="img/banniere.jpg" alt="Adopte un grec " /><!--banniere-->
     </section>
-    <div id="container-NAV">
+    <!--coordonnée du restaurant, recherche, panier-->
+    <div id="container-NAV"> 
       <nav id="nav-container">
+        <!--coordonnée et nom du restaurant-->
         <div id="coordonnee-restau">
           <strong class="nom-restau">Adopte un Grec</strong>
           <h5 class="adresse-restau">5 rue tacos, TacosVille</h5>
         </div>
+        <!--barre de recherche (input texte + bouton loupe)-->
         <div id="recherche">
-          <input
-            type="text"
-            class="barre-recherche"
-            placeholder="Rechercher des produits" />
+          <input type="text" class="barre-recherche" placeholder="Rechercher des produits" />
           <button class="btn-recherche">
-            <img
-              src="img/magnifying_glass.svg"
-              height="40"
-              width="40"
-              class="magnifying-glass" />
+            <img src="img/magnifying_glass.svg" height="40" width="40" class="magnifying-glass" />
           </button>
         </div>
+        <!--bouton panier-->
         <a class="btn-panier" href="panier"
           ><img src="img/panier 1.png" alt="panier" class="panier"
         /></a>
       </nav>
     </div>
+    <!--produits phares-->
     <section>
       <div id="produits-phares">
         <strong class="produits-phares-texte">Produits phares</strong>
@@ -126,11 +127,12 @@
         </div>
       </div>
     </section>
+    <!--footer-->
     <footer>
       <ul>
-        <li><img src="img/facebook.svg" alt="facebook" /></li>
-        <li><img src="img/insta.svg" alt="instagram" /></li>
-        <li><img src="img/twitter.svg" alt="X - twitter" /></li>
+        <li><img src="img/facebook.svg" alt="facebook" /></li><!--logo facebook-->
+        <li><img src="img/insta.svg" alt="instagram" /></li><!--logo instagram-->
+        <li><img src="img/twitter.svg" alt="X - twitter" /></li><!--logo twitter-->
       </ul>
       <p class="white">© 2024 AdopteUnGrec. Tous droits réservés.</p>
     </footer>
