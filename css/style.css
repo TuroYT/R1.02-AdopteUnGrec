@@ -1,226 +1,224 @@
 /*
     Fichier: style.css
+
+    Elements communs et index
+    
 */
 
-
-
-/* Couleurs */
-.red {
-    color: #FF3F00;
-}
-
-.orange {
-    color: #FF7F11;
-}
-
-.white {
-    color: #FFFFFC;
-}
-
-
-/**
- * Choisir un restaurant
- */
-
-#demoMap{
-    height: 800px; 
-    width: 70%;
-    min-width: 800px;
-    border-radius: 22px;
-    -moz-border-radius: 22px;
-    overflow: hidden;
-}
-
-
-/* Aside */
-
-
-.restauList{
-    margin-left: 40px;
-    background-color: #FF7F11;
-    border-radius: 22px;
-    padding: 20px;
-}
-
-.restauCard{
-    border-radius: 8px;
-    background: var(--Blanc, #FFFFFC);
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    margin-bottom: 20px;
-
-    p {
-        margin: 0px;
-    }
-
-    h3 {
-        margin-top: 0px;
-    }
-}
-
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.container {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 body {
-    margin: 0px;
+  margin: 0px;
 }
 
 h2 {
-    font-family: 'Love Ya Like A Sister', cursive;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-shadow:  0px 4px 8px rgba(0, 0, 0, 0.25); 
 }
-
 
 /*
 
-    ? Sections
+    ? Sections de la page dans l'ordre
 
 */
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
-    flex-wrap: wrap;
-    background-color: #FF7F11;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  flex-wrap: wrap;
+  background-color: #ff7f11;
 
-    img {
-        width: 100px;
-    }
+  img {
+    width: 100px;
+  }
 
-    h1 {
-        text-align: center;
-        font-family: 'Love Ya Like A Sister', serif;
-        color: #FFFFFF;
-        font-size: 64px;
-        text-shadow: 1px 1px 2px black;
-        margin: 0;
-        font-weight: normal;
-        transform: translate(12%, 0);
-    }
-
-
+  h1 {
+    text-align: center;
+    font-family: "Love Ya Like A Sister", serif;
+    color: #ffffff;
+    font-size: 64px;
+    text-shadow: 1px 1px 2px black;
+    margin: 0;
+    font-weight: normal;
+    transform: translate(12%, 0);
+  }
 }
-
 
 #callToAction {
-    background-image: url(../img/cta-bg.png);
-    min-height: 350px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-left: 0px;
-    margin-right: 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../img/cta-bg.png);
+  min-height: 350px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    img {
-        max-width: 300px;
-        max-height: 300px;
-        width: 50%;
-    }
+  img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 50%;
+  }
 }
 
+#demoMap {
+  height: 800px;
+  width: 70%;
+  min-width: 800px;
+  border-radius: 22px;
+  -moz-border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
 
 #chosirUnRestaurant {
-    margin: 10px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 30px;
-    border-radius: 22px;
-    padding: 10px;
-    border: 5px solid #FF7F11;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 30px;
+  border-radius: 22px;
+  padding: 10px;
+  border: 5px solid #ff7f11;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  input {
+    width: 80%;
+    height: 80%;
+    border: none;
+    align-self: center;
+  };
 
-    .input {
-        width: 80%;
-        height: 80%;
-        border: none;
-        align-self: center;
-    }
-
-    
-
-
+  input:focus {
+    outline: none;
+    border: none;
+}
 }
 
-/* footer */
+.restauList {
+  margin-left: 40px;
+  background-color: #ff7f11;
+  border-radius: 22px;
+  padding: 20px;
+}
+
+.restauCard {
+  border-radius: 8px;
+  background: var(--Blanc, #fffffc);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+
+
+  .infos {
+    width: 90%;
+  }
+
+  p {
+    margin: 0px;
+  }
+
+  h3 {
+    margin-top: 0px;
+  }
+}
+
 footer {
-    background-color: #FF7F11;
+  background-color: #ff7f11;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 100px;
+
+  ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 100px;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    width: 100%;
 
-    ul {
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        padding: 0px;
-        margin: 0px;
-        margin-top: 20px;
-        width: 100%;
-
-        li>img {
-            width: 43px;
-            height: 43px;
-        }
+    li > img {
+      width: 43px;
+      height: 43px;
     }
+  }
 }
 
+/**
+ * Utils
+ */
 
+.container {
+  display: flex;
+}
 
 .btn {
-    border-radius: 22px;
-    
-    border: 5px solid var(--Blanc, #FFFFFC);
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 1rem;
-    color: white;
-    padding: 15px;
+  border-radius: 22px;
+
+  border: 5px solid var(--Blanc, #fffffc);
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1rem;
+  color: white;
+  padding: 15px;
 }
 
 .btn:hover {
-    background-color: #FF3F00;
+  background-color: #ff3f00;
 }
 
 .btn-orange {
-    border: 5px solid var(--Blanc, #FF7F11);
-    color: #FF7F11;
+  border: 5px solid var(--Blanc, #ff7f11);
+  color: #ff7f11;
 }
 
 .btn-orange:hover {
-    color: #FF3F00;
-    border-color: #FF3F00;
-    background-color: #FFFFFC;
+  color: #ff3f00;
+  border-color: #ff3f00;
+  background-color: #fffffc;
 }
 
+.adlam-display-regular,
+a,
+p {
+  font-family: "ADLaM Display", system-ui;
+}
 
-.adlam-display-regular, a, p {
-    font-family: "ADLaM Display", system-ui;    
+/**
+ *Couleurs 
+ */
+.red {
+  color: #ff3f00;
+}
+
+.orange {
+  color: #ff7f11;
+}
+
+.white {
+  color: #fffffc;
 }
