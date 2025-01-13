@@ -79,7 +79,7 @@ header {
   background-color: #ff7f11;
 }
 
-header>img {
+header>a>img {
   width: 100px;
 }
 
