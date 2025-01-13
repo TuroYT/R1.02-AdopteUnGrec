@@ -11,6 +11,7 @@ main {
   align-items: center;
   padding-left: 10%;
   padding-right: 10%;
+  
 }
 
 body {
@@ -26,13 +27,47 @@ h2 {
   text-shadow:  0px 4px 8px rgba(0, 0, 0, 0.25); 
 }
 
-/*
 
-    ? Sections de la page dans l'ordre
 
+/* 
+    ? Elements communs
 */
 
-/* header */
+/* 
+    * Footer
+*/
+
+footer {
+  background-color: #ff7f11;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 100px;
+}
+
+footer>ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+footer>ul>li > img {
+    width: 43px;
+    height: 43px;
+  }
+
+
+/* 
+    * Header 
+*/
 
 header {
   display: flex;
@@ -47,7 +82,6 @@ header {
 header>img {
   width: 100px;
 }
-
 
 header>h1 {
   text-align: center;
@@ -69,7 +103,7 @@ header>h1 {
 
 
 /* 
-    ? Call to action
+    * Call to action
 */
 
 #callToAction {
@@ -98,7 +132,7 @@ header>h1 {
 
 
 /* 
-    ? Choisir un restaurant
+    * Choisir un restaurant
 */
 
 #demoMap {
@@ -137,7 +171,9 @@ header>h1 {
   outline: none;
   border: none;
 }
-}
+
+
+
 
 .restauList {
   margin-left: 40px;
@@ -154,22 +190,23 @@ header>h1 {
   padding: 20px;
   margin-bottom: 20px;
 
+  
+}
 
-  .infos {
-    width: 90%;
-  }
+.restauCard>.infos {
+  width: 90%;
+}
 
-  p {
-    margin: 0px;
-  }
+.restauCard>p {
+  margin: 0px;
+}
 
 .restauCard>h3 {
   margin-top: 0px;
 }
-}
 
 /* 
-    ? Qui sommes-nous ?
+    * Qui sommes-nous ?
 */
 
 #nous {
@@ -182,36 +219,6 @@ header>h1 {
 }
 
 
-/* 
-    ? Footer
-*/
-
-footer {
-  background-color: #ff7f11;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 100px;
-}
-
-footer>ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-  margin-top: 20px;
-  width: 100%;
-}
-
-footer>ul>li > img {
-    width: 43px;
-    height: 43px;
-  }
 
 /**
  * Utils
@@ -266,83 +273,4 @@ p {
 
 .white {
   color: #fffffc;
-}
-
-.rectangle {
-  background-color: #ff3f00;
-  text-align: center;
-  width: 1229px;
-  height: 141px;
-  padding: 20px;
-  border-radius: 22px;
-}
-
-form.formulaireInfo{
-  width: 1112px;
-  height: 537px;
-  flex-shrink: 0;
-  border: 1px solid #000;
-  background: var(--Orange, #FF7F11);
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 44px; /* Espacement entre les champs */
-}
-
-.column-left{
-  display:flex;
-  flex-direction: column;
-  width: 50%;
-}
-
-.column-rignt{
-  margin-top: 30px;
-  margin-left: 386px;
-  display:flex;
-  flex-direction: column;
-  width: 50%;
-}
-
-input{
-  border-radius: 22px;
-  border: 3px solid var(--Rouge, #FF3F00);
-  background: #FFFFFC; 
-  padding: 10px; /* Espacement interne pour rendre les inputs plus confortables */
-  font-size: 16px; /* Taille du texte dans les inputs */   
-}
-
-label{
-  display: block;
-  width:29px;
-  float:bottom;
-  white-space: nowrap;
-  color: var(--Blanc, #FFFFFC);
-  text-align: center;
-  font-family: "ADLaM Display";
-  font-size: 20px;
-  font-style: normal;
-  line-height: normal;
-  margin-bottom: 5px; /* Espacement entre le label et l'input */
-  font-size: 16px; /* Taille légèrement réduite pour plus de lisibilité */
-  justify-content: center;
-}
-
-input[type="submit"]{
-  background: #FF7F11;
-  width: 223px;
-  height: 57px;
-  flex-shrink: 0;
-  border-radius: 22px;
-  border: 5px solid var(--Blanc, #FFFFFC);
-  text-align: center;
-  color:white;
-  font-family: "ADLaM Display";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  margin-top: 400px;
-}
-
-div{
-  margin-top: 21px;
-  margin-left: 30px;
 }
