@@ -302,7 +302,7 @@ form.formulaireInfo{
   width: 50%;
 }
 
-input{
+.texteFormulaire{
   border-radius: 22px;
   border: 3px solid var(--Rouge, #FF3F00);
   background: #FFFFFC; 
@@ -310,7 +310,7 @@ input{
   font-size: 16px; /* Taille du texte dans les inputs */   
 }
 
-label{
+.titre{
   display: block;
   width:29px;
   float:bottom;
@@ -342,7 +342,3 @@ input[type="submit"]{
   margin-top: 400px;
 }
 
-div{
-  margin-top: 21px;
-  margin-left: 30px;
-}
