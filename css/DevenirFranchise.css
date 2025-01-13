@@ -15,8 +15,7 @@ form.formulaireInfo{
     background: var(--Orange, #FF7F11);
     display: flex;
     margin-bottom: 44px; /* Espacement entre les champs */
-.column{
-    column-count: 2;
+}
 
 .column-left{
     display:flex;
