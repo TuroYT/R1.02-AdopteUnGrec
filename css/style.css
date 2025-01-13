@@ -11,6 +11,7 @@ main {
   align-items: center;
   padding-left: 10%;
   padding-right: 10%;
+  
 }
 
 body {
@@ -26,11 +27,13 @@ h2 {
   text-shadow:  0px 4px 8px rgba(0, 0, 0, 0.25); 
 }
 
-/*
 
-    ? Sections de la page dans l'ordre
 
+/* 
+    ? Elements communs
 */
+
+/* header */
 
 header {
   display: flex;
@@ -40,22 +43,34 @@ header {
   padding-right: 10%;
   flex-wrap: wrap;
   background-color: #ff7f11;
-
-  img {
-    width: 100px;
-  }
-
-  h1 {
-    text-align: center;
-    font-family: "Love Ya Like A Sister", serif;
-    color: #ffffff;
-    font-size: 64px;
-    text-shadow: 1px 1px 2px black;
-    margin: 0;
-    font-weight: normal;
-    transform: translate(12%, 0);
-  }
 }
+
+header>img {
+  width: 100px;
+}
+
+header>h1 {
+  text-align: center;
+  font-family: "Love Ya Like A Sister", serif;
+  color: #ffffff;
+  font-size: 64px;
+  text-shadow: 1px 1px 2px black;
+  margin: 0;
+  font-weight: normal;
+  transform: translate(12%, 0);
+}
+
+
+/*
+
+    ? Sections de la Index dans l'ordre
+
+*/
+
+
+/* 
+    ? Call to action
+*/
 
 #callToAction {
   background-image: url(../img/cta-bg.png);
@@ -71,12 +86,20 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 
-  img {
-    max-width: 300px;
-    max-height: 300px;
-    width: 50%;
-  }
+ 
 }
+
+#callToAction>img {
+  max-width: 300px;
+  max-height: 300px;
+  width: 50%;
+}
+
+
+
+/* 
+    ? Choisir un restaurant
+*/
 
 #demoMap {
   height: 800px;
@@ -99,18 +122,24 @@ header {
   padding: 10px;
   border: 5px solid #ff7f11;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
-  input {
-    width: 80%;
-    height: 80%;
-    border: none;
-    align-self: center;
-  };
+  
 
-  input:focus {
-    outline: none;
-    border: none;
 }
+
+#choisirUnRestaurant>input {
+  width: 80%;
+  height: 80%;
+  border: none;
+  align-self: center;
 }
+
+#choisirUnRestaurant>input:focus {
+  outline: none;
+  border: none;
+}
+
+
+
 
 .restauList {
   margin-left: 40px;
@@ -127,19 +156,38 @@ header {
   padding: 20px;
   margin-bottom: 20px;
 
-
-  .infos {
-    width: 90%;
-  }
-
-  p {
-    margin: 0px;
-  }
-
-  h3 {
-    margin-top: 0px;
-  }
+  
 }
+
+.restauCard>.infos {
+  width: 90%;
+}
+
+.restauCard>p {
+  margin: 0px;
+}
+
+.restauCard>h3 {
+  margin-top: 0px;
+}
+
+/* 
+    ? Qui sommes-nous ?
+*/
+
+#nous {
+  background-image: url("../img/background.png");
+  background-size: auto auto;
+  border-radius: 22px;
+  background-position: center;
+  margin-top: 50px;
+  padding-left: 20px;
+}
+
+
+/* 
+    ? Footer
+*/
 
 footer {
   background-color: #ff7f11;
@@ -151,22 +199,22 @@ footer {
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 100px;
-
-  ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 20px;
-    width: 100%;
-
-    li > img {
-      width: 43px;
-      height: 43px;
-    }
-  }
 }
+
+footer>ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+footer>ul>li > img {
+    width: 43px;
+    height: 43px;
+  }
 
 /**
  * Utils
