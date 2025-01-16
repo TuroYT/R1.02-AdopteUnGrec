@@ -33,12 +33,13 @@
         </h2>
       </section>
       <section>
+        <h2> Entrez vos informations ci dessous </h2>
         <!--Formulaire que le client poura remplir pour rentrer ses informations-->
-        <form action="" method="get" class="formulaireInfo">
+        <form action="#" method="get" class="formulaireInfo">
           <!-- Colonne de gauche -->
-          <div class="column-left">     <!--La div est utilisée pour regrouper les éléments les uns avec les autres-->
+          <div class="column">     <!--La div est utilisée pour regrouper les éléments les uns avec les autres-->
             <div class="Champ">
-              <label for="Nom" class="titre">Nom</label>        <!--Nom du champ concerné-->
+              <label for="nom" class="titre">Nom</label>        <!--Nom du champ concerné-->
               <input type="text" name="nom" id="nom" required class="texteFormulaire"/>    <!--Zone dans laquelle on peut entrer les informations, dans ce cas la on pourra mettre un texte-->
             </div>
             <div class="Champ">
@@ -50,13 +51,13 @@
               <input type="text" name="genre" id="genre" required class="texteFormulaire" />
             </div>
             <div class="Champ">
-              <label for="numero"class="titre">Numéro de téléphone</label>     
+              <label for="numero" class="titre">Numéro de téléphone</label>     
               <input type="text" name="numero" id="numero" required class="texteFormulaire"/>
             </div>
           </div>
 
           <!-- Colonne de droite -->
-          <div class="column-right">
+          <div class="column">
             <div class="Champ">
               <label for="mail" class="titre">Adresse mail</label>
               <input type="email" name="mail" id="mail" required class="texteFormulaire"/>       <!--Dans ce cas la, l'utilisateur devra rentre une adresse mail-->

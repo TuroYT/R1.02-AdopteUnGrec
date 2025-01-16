@@ -288,20 +288,15 @@ form.formulaireInfo {
   margin-bottom: 44px; /* Espace sous le formulaire pour éviter que les éléments se touchent. */
 }
 
-.column-left {
-  display: flex; /* Mise en page flexible pour les enfants. */
-  flex-direction: column; /* Aligne les éléments verticalement. */
-  width: 50%; /* Occupe la moitié de l’espace disponible dans le conteneur parent. */
+.column{
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacement entre les éléments */
 }
 
-.column-right {
-  margin-top: 30px; /* Ajoute de l’espace en haut. */
-  margin-left: 386px; /* Espacement horizontal fixe, risque de poser problème sur des écrans plus petits. */
-  display: flex; /* Mise en page flexible pour les enfants. */
-  flex-direction: column; /* Aligne les éléments verticalement. */
-  width: 50%; /* Occupe la moitié de l’espace disponible dans le conteneur parent. */
+.formulaireInfo.column{
+  align-items: flex-start;  /*alligne les éléments en haut*/
 }
-
 .texteFormulaire {
   border-radius: 22px; /* Coins arrondis pour les champs du formulaire. */
   border: 3px solid var(--Rouge, #FF3F00); /* Bordure rouge définie via une variable CSS. */
@@ -320,6 +315,11 @@ form.formulaireInfo {
   font-family: "ADLaM Display"; /* Police personnalisée, doit être importée correctement. */
   font-size: 16px; /* Taille de texte fixe. */
   margin-bottom: 5px; /* Espace entre le titre et l’élément suivant. */
+}
+
+.Champ{
+  margin-top: 30px;
+  margin-left: 21px;
 }
 
 input[type="submit"] {
