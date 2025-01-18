@@ -155,17 +155,19 @@ header>h1 {
   margin-bottom: 20px;
 
 
-  .infos {
-    width: 90%;
-  }
+  
+}
 
-  p {
-    margin: 0px;
-  }
+.restauCard>.infos {
+  width: 90%;
+}
+
+.restauCard>p {
+  margin: 0px;
+}
 
 .restauCard>h3 {
-  margin-top: 0px;
-}
+margin-top: 0px;
 }
 
 /* 
@@ -313,7 +315,6 @@ form.formulaireInfo{
 .titre{
   display: block;
   width:29px;
-  float:bottom;
   white-space: nowrap;
   color: var(--Blanc, #FFFFFC);
   text-align: center;
