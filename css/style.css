@@ -271,74 +271,69 @@ p {
 }
 
 .rectangle {
-  background-color: #ff3f00;
-  text-align: center;
-  width: 1229px;
-  height: 141px;
-  padding: 20px;
-  border-radius: 22px;
+  background-color: #ff3f00; /* Couleur de fond vive, attention au contraste avec le texte. */
+  text-align: center; /* Centre le texte horizontalement. */
+  width: 1229px; /* Largeur fixe, à remplacer par des unités flexibles si possible. */
+  height: 141px; /* Hauteur fixe, potentiellement problématique pour les petits écrans. */
+  padding: 20px; /* Ajoute de l’espace interne autour du contenu. */
+  border-radius: 22px; /* Ajoute des coins arrondis pour un design moderne. */
 }
 
-form.formulaireInfo{
-  width: 1112px;
-  height: 537px;
-  flex-shrink: 0;
-  border: 1px solid #000;
-  background: var(--Orange, #FF7F11);
+form.formulaireInfo {
+  width: 1112px; /* Largeur fixe, pas idéale pour un design responsive. */
+  height: 537px; /* Hauteur fixe, peut limiter l'adaptabilité sur de petits écrans. */
+  flex-shrink: 0; /* Empêche le formulaire de se rétrécir, ce qui peut causer des débordements. */
+  border: 1px solid #000; /* Bordure noire pour délimiter le formulaire. */
+  background: var(--Orange, #FF7F11); /* Couleur de fond avec une variable CSS par défaut. */
+  display: flex; /* Mise en page flexible pour gérer les enfants. */
+  flex-wrap: wrap; /* Permet de passer à une nouvelle ligne si nécessaire. */
+  margin-bottom: 44px; /* Espace sous le formulaire pour éviter que les éléments se touchent. */
+}
+
+.column{
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 44px; /* Espacement entre les champs */
-}
-
-.column-left{
-  display:flex;
   flex-direction: column;
-  width: 50%;
+  gap: 10px; /* Espacement entre les éléments */
 }
 
-.column-rignt{
+.formulaireInfo.column{
+  align-items: flex-start;  /*alligne les éléments en haut*/
+}
+.texteFormulaire {
+  border-radius: 22px; /* Coins arrondis pour les champs du formulaire. */
+  border: 3px solid var(--Rouge, #FF3F00); /* Bordure rouge définie via une variable CSS. */
+  background: #FFFFFC; /* Couleur de fond claire pour un bon contraste avec le texte. */
+  padding: 10px; /* Espace interne pour rendre les champs plus confortables. */
+  font-size: 16px; /* Taille du texte par défaut. */
+}
+
+.titre {
+  display: block; /* Affiche le titre comme un bloc pour qu'il occupe toute la largeur. */
+  width: 29px; /* Largeur fixe, probablement trop petite pour un titre. */
+  float: bottom; /* "float: bottom" n’est pas valide. Peut être supprimé. */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne. */
+  color: var(--Blanc, #FFFFFC); /* Couleur blanche pour le texte. */
+  text-align: center; /* Centre le texte horizontalement. */
+  font-family: "ADLaM Display"; /* Police personnalisée, doit être importée correctement. */
+  font-size: 16px; /* Taille de texte fixe. */
+  margin-bottom: 5px; /* Espace entre le titre et l’élément suivant. */
+}
+
+.Champ{
   margin-top: 30px;
-  margin-left: 386px;
-  display:flex;
-  flex-direction: column;
-  width: 50%;
+  margin-left: 21px;
 }
 
-.texteFormulaire{
-  border-radius: 22px;
-  border: 3px solid var(--Rouge, #FF3F00);
-  background: #FFFFFC; 
-  padding: 10px; /* Espacement interne pour rendre les inputs plus confortables */
-  font-size: 16px; /* Taille du texte dans les inputs */   
-}
-
-.titre{
-  display: block;
-  width:29px;
-  white-space: nowrap;
-  color: var(--Blanc, #FFFFFC);
-  text-align: center;
-  font-family: "ADLaM Display";
-  font-size: 20px;
-  font-style: normal;
-  line-height: normal;
-  margin-bottom: 5px; /* Espacement entre le label et l'input */
-  font-size: 16px; /* Taille légèrement réduite pour plus de lisibilité */
-  justify-content: center;
-}
-
-input[type="submit"]{
-  background: #FF7F11;
-  width: 223px;
-  height: 57px;
-  flex-shrink: 0;
-  border-radius: 22px;
-  border: 5px solid var(--Blanc, #FFFFFC);
-  text-align: center;
-  color:white;
-  font-family: "ADLaM Display";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  margin-top: 400px;
+input[type="submit"] {
+  background: #FF7F11; /* Couleur de fond cohérente avec le reste du design. */
+  width: 223px; /* Largeur fixe, pourrait être flexible. */
+  height: 57px; /* Hauteur fixe, pas optimale pour l’adaptabilité. */
+  flex-shrink: 0; /* Empêche le bouton de se redimensionner. */
+  border-radius: 22px; /* Coins arrondis pour un design moderne. */
+  border: 5px solid var(--Blanc, #FFFFFC); /* Bordure blanche autour du bouton. */
+  text-align: center; /* Centre le texte dans le bouton. */
+  color: white; /* Couleur du texte blanche pour un bon contraste. */
+  font-family: "ADLaM Display"; /* Police personnalisée, attention à sa disponibilité. */
+  font-size: 16px; /* Taille du texte. */
+  margin-top: 400px; /* Grande marge supérieure, peut créer des espaces inutiles. */
 }
