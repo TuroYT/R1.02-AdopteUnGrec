@@ -310,7 +310,6 @@ form.formulaireInfo {
 .titre {
   display: block; /* Affiche le titre comme un bloc pour qu'il occupe toute la largeur. */
   width: 29px; /* Largeur fixe, probablement trop petite pour un titre. */
-  float: bottom; /* "float: bottom" n’est pas valide. Peut être supprimé. */
   white-space: nowrap; /* Empêche le texte de passer à la ligne. */
   color: var(--Blanc, #FFFFFC); /* Couleur blanche pour le texte. */
   text-align: center; /* Centre le texte horizontalement. */
